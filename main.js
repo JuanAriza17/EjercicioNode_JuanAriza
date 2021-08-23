@@ -27,12 +27,12 @@ const server = http.createServer((req, res)=>{
 
         getProveedores((datos)=>{
             let html = '';
-            for (let i = 0; i < datos.length; i++) {
-                const element = datos[i];
+
+            datos.forEach(element=>{
                 html += '<tr><td>'+element.idproveedor+'</td> \
                 <td>'+element.nombrecompania+'</td> \
                 <td>'+element.nombrecontacto+'</td></tr>';
-            }
+            });
 
             fs.readFile('tabla.html', 'utf8', (err, data)=>{
                 if(err){
@@ -54,13 +54,13 @@ const server = http.createServer((req, res)=>{
 
         getClientes((datos)=>{
             let html = '';
-            for (let i = 0; i < datos.length; i++) {
-                const element = datos[i];
+            
+            datos.forEach(element=>{
                 html += '<tr><td>'+element.idCliente+'</td> \
                 <td>'+element.NombreCompania+'</td> \
                 <td>'+element.NombreContacto+'</td></tr>';
-            }
-
+            });
+                
             fs.readFile('tabla.html', 'utf8', (err, data)=>{
                 if(err){
                     throw err;
