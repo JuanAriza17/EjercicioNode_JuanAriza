@@ -1,0 +1,23 @@
+{
+  "name": "EjercicioNode_JuanAriza",
+  "version": "1.0.0",
+  "description": "Juan Andrés Ariza Gacharná - 201911442",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanAriza17/EjercicioNode_JuanAriza.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanAriza17/EjercicioNode_JuanAriza/issues"
+  },
+  "homepage": "https://github.com/JuanAriza17/EjercicioNode_JuanAriza#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
